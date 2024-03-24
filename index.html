@@ -28,6 +28,16 @@
     <div class="container mx-auto py-8 px-4 text-center">
         <h1 class="text-3xl font-bold mb-4">Hi, I'm Karthik, I build software!</h1>
         <p class="text-lg">Welcome to my portfolio website.</p>
+
+        <!-- Toggle Button -->
+        <button x-data="{ open: false }" @click="open = !open" class="mt-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Toggle Content
+        </button>
+
+        <!-- Toggle Content -->
+        <div x-show="open" class="mt-4">
+            <p>This is the hidden content that will be toggled.</p>
+        </div>
     </div>
 
     <!-- Alpine.js CDN -->
